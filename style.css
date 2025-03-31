@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+    transition: color 0.3s ease;
+}
+
+/* Sección de Inicio */
+#home {
+    margin-top: 80px;
+}
+
+#searchInput {
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+/* Tarjetas de Productos */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #searchInput {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    header .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+}
+
